@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarnaWe - Inicio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static './css/styles.css' %}" />
+    <script defer src="{% static './js/carnawe_main.js' %}"></script>
+  </head>
+  <body>
+    <body id="cuerpo">
+        <div class="container-fluid">
+          <header class="row">
+            <div id="logo">
+              <img
+                class="rounded mx-auto d-block"
+                id="imagenlogo"
+                src= "{% static './img/logo_sin_fondo.png' %}"
+              />
+            </div>
+    
+            <div
+              id="navegador"
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+            >
+    
+              <ul
+             id="elementosnav" class="nav col-8 col-md-auto mb-2 justify-content-center mb-md-0"
+              >
+                <li class="elemento"><a href="/" class="nav-link px-2 link-dark">Inicio</a></li>
+                <li class="elemento"><a href="/compraEntradas" class="nav-link px-2 link-dark">Comprar Entradas</a></li>
+                <li>
+                  <a href="/informacion" class="nav-link px-2 link-dark"
+                    >¿Qué es el carnaval?</a
+                  >
+                </li>
+                <li><a href="#" class="nav-link px-2 link-dark">Contacto</a></li>
+              </ul>
+    
+              <div id="botonesnav" class="col-md-4 text-end">
+                <button type="button" class="btn btn-primary me-2 botonesheader" >
+                  Login
+                </button>
+                <button type="button" class="btn btn-primary botonesheader">
+                  Registro
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <div class="container"> 
+
+               <!--Inicio Migas-->
+               <div class="row">
+                <div class="col-12" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb ">
+                      <li class="breadcrumb-item "><a href="/" class="text-dark">Inicio</a></li>
+                      <li class="breadcrumb-item "><a href="/compraEntradas" class="text-dark">Compra Entradas</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!--Fin Migas-->
+            
+              <div class="container artwork-content text-center">
+              <div class="stage-content-text">
+              <h1 class="stage-headline">Carnaval de Cádiz 2023</h1>
+              </div>
+              <i class="bi bi-calendar"></i>
+              <time data-qa="event-date">16/02/2023 | 26/02/2023</time>
+              <address class="stage-list-item  u-position-relative">
+              <i class="bi bi-geo-alt"></i>
+              <span data-qa="event-venue" class="u-position-relative">
+              <span>CADIZ | </span>
+              
+              <a class="link-transparent text-underline " href="https://www.google.com/maps/place/Gran+Teatro+Falla/@36.5337318,-6.3072475,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0xd0dd15e0df4813f:0x5cd938e0aaa3709e!2sGran+Teatro+Falla,+Pl.+Fragela,+s%2Fn,+11003+C%C3%A1diz!2m2!1d-6.3023766!2d36.5337319!3m5!1s0xd0dd15e0df4813f:0x5cd938e0aaa3709e!8m2!3d36.5337319!4d-6.3023766!16s%2Fm%2F0bs7ltk?entry=ttu" target="_self"><span>GRAN TEATRO FALLA</span></a>
+              </span>
+              </address>
+              </div>
+
+         
+            
+            
+            <div class="col-xs-12 text-center  ">
+              <a href="{% static './img/plano_mapa.png' %}" class="display-block js-track-teaser js-track-promo" title="plano  teatro" >
+              <picture>
+              <img src="{% static './img/ver_mapa.png' %}"  class="fluid-image ls-is-cached lazyloaded" alt="img ver_plano">
+              </picture>
+              </a>
+              </div>
+          </div>
+
+
+          <style>
+            .c-narrow {
+            margin-top: 30px;
+            }
+          </style>
+
+          <section data-c="ticketselectionbox2" class="c-narrow container">
+
+      
+
+              <div class="row container-fluid">
+                <div class="row  border border-1 border-dark  rounded-top">
+                  <div class="col-12 col-lg-10 mt-4 mb-3 fw-bold fs-4">
+                    <p> 1. Por favor, selecciona la cantidad de entradas:</p>
+                  </div>
+                  <div class="col-12 col-lg-2 mt-4 mb-3 text-end fw-bold">
+                    <input type="number" class="w-50">
+                  </div>
+                </div>
+
+                <div class="row border border-1  border-dark ">
+                <div class="col-12 mt-4 fw-bold fs-4" >
+                  <p>2. Por favor, selecciona la categoría de tus entradas: </p>
+                </div>
+              </div>
+
+
+              <div class="row  border border-1 border-dark">
+                <div class="col-12 col-lg-10 mt-4 mb-3 fw-bold fs-5">
+                  <p> Palco</p>
+                </div>
+                <div class="col-12 col-lg-2 mt-4 mb-3 text-end fw-bold">
+                  <p>40€ <input name="dinero" type="radio" value="40" style="height:18px; width:18px"/></p>
+                </div>
+              </div>
+
+              <div class="row  border border-1 border-dark ">
+                <div class="col-12 col-lg-3 mt-4 mb-3 fw-bold fs-5">
+                  <p> Anfiteatro </p>
+                </div>
+                <div class="col-12 col-lg-7 mt-4 mb-3">
+                  <p>(Anfiteatro y Anfiteatro delantero) </p>
+                </div>
+                <div class="col-12 col-lg-2 mt-4  mb-3 text-end fw-bold">
+                  <p>60€ <input name="dinero" type="radio" value="60 " style="height:18px; width:18px"/></p>
+                </div>
+              </div>
+
+
+              <div class="row  border border-1 border-dark">
+                <div class="col-12 col-lg-3 mt-4  mb-3 fw-bold fs-5">
+                  <p> Platea de patio </p>
+                </div>
+                <div class="col-12 col-lg-7 mt-4 mb-3">
+                  <p>(Patio de Butacas) </p>
+                </div>
+                <div class="col-12 col-lg-2 mt-4 mb-3 text-end fw-bold">
+                  <p>25€ <input name="dinero" type="radio" value="25" style="height:18px; width:18px"/></p>
+                </div>
+              </div>
+
+              <div class="row  border border-1 border-dark">
+                <div class="col-12 col-lg-10 mt-4 mb-3 fw-bold fs-5">
+                  <p> Platea de palco </p>
+                </div>
+                <div class="col-12 col-lg-2 mt-4 mb-3 text-end fw-bold">
+                    <p>30€ <input name="dinero" type="radio" value="30" style="height:18px; width:18px"/></p>
+                </div>
+              </div>
+
+
+              <div class="row  border border-1 border-dark ">
+                <div class="col-12 col-lg-3 mt-4 mb-3 fw-bold fs-5">
+                 <p>Patio</p> 
+                </div>
+                <div class="col-12 col-lg-7 mt-4 mb-3">
+                  <p>(Gallinero) </p>
+                </div>
+                <div class="col-12 col-lg-2 mt-4 mb-3 text-end fw-bold">
+                  <p>15€ <input name="dinero" type="radio" value="15" style="height:18px; width:18px"/></p>
+                </div>
+              </div>
+
+
+              <div class="row border border-1 border-dark text-center rounded-bottom">
+                <div class="col-12 mt-3 ">
+                  <a href="/loginPago" class="nav-link px-2 link-dark"><button type="submit"  class="mb-3 w-50 bg-dark fw-bold border border-dark rounded-4 form-control-lg text-light ">Comprar</button></a>
+                </div>
+              </div>
+             
+              
+            
+            </section>
+          
+
+
+          <footer class="row text-center text-light py-4 mt-5">
+            <div class="col-4">
+                <h4 class="mb-4">Elaborado por</h4>
+                <p>Equipo de desarrollo Los Chemaliers</p>
+            </div>
+            <div class="col-4">
+                <h4 class="mb-4">Sobre nosotros</h4>
+                <p class="px-4">carna We es una familia de programadores
+                    afi cionada al carnaval que ha desarrollado una
+                    web donde adquirir entradas para el falla .</p>
+            </div>
+            <div class="col-4">
+                <h4 class="mb-4">Redes Sociales</h4>
+                <div class="d-flex justify-content-center">
+                    <img src="{% static './img/twitter.png' %}" alt="icono de twitter">
+                    <img src="{% static './img/instagram.png' %}" alt="icono de instagram">
+                    <img src="{% static './img/facebook.png' %}" alt="icono de facebook">
+                </div>
+            </div>
+            <div class="mt-3">
+                <h5 class="d-inline">Todos los derechos reservados</h5>
+                <img src="{% static './img/marca_r.png' %}" alt="logo copyright">
+            </div>
+        </footer>
+</div>
+
+
+
+<script src="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+
+  </body>
+  </html>
